@@ -20,6 +20,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                "primary": '#B68C5A'
               }
             }
           }
@@ -36,8 +37,55 @@
     </style>
 </head>
 <body>
-    <header>
-
+    <header class="container mx-auto">
+        <nav class="pt-4 lg:pt-8 pb-6 lg:pb-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-pop font-normal text-base text-[#707070]">
+                      <li><a>Home</a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Cases</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <a><img src="images/logo2.png" alt="" class="w-3/4 lg:w-auto"></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-pop font-normal text-base text-[#707070]">
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Cases</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn lg:px-7 bg-primary text-white font-pop text-[10px] lg:text-[18px] font-semibold w-3/4 lg:w-auto">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <div class="px-4 lg:px-0">
+            <div class="hero rounded-[10px]" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60 rounded-[10px]"></div>
+                <div class="hero-content text-center">
+                  <div class="px-10 py-10 lg:px-[260px] lg:py-[105px]">
+                    <h1 class="mb-6 text-3xl lg:text-7xl font-eb font-extrabold text-white">We Provide Effective 
+                    <br>
+                    Legal Solutions</h1>
+                    <p class="mb-4 lg:mb-8 font-pop text-sm lg:text-base font-normal text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div>
+                        <input type="text" placeholder="Search your services" class="text-[#A0A0A0] text-base font-pop font-normal py-5 pl-5  lg:pr-[315px] rounded-lg mb-2">
+                        <button class="btn bg-primary border-none text-white px-8 text-[20px] font-pop font-semibold capitalize">Search</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
